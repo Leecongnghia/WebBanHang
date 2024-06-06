@@ -15,7 +15,9 @@ namespace WebBanHang.Controllers
     public class ProductController : Controller
     {
         private readonly ApplicationDbContext _db;
+        
         private readonly IHostingEnvironment _hosting;
+
         public ProductController(ApplicationDbContext db, IHostingEnvironment hosting)
         {
             _db = db;

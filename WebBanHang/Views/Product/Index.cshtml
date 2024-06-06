@@ -10,7 +10,7 @@
         </a>
     </div>
 </div>
-<table class="table table-bordered table-striped">
+<table class="table table-striped table-hover ">
     <thead>
         <tr>
             <th>Name</th>
@@ -23,7 +23,7 @@
     <tbody>
         @foreach (var x in Model)
         {
-            <tr>
+            <tr class="info active">
                 <td>@x.Name</td>
                 <td>@x.Price</td>
                 <td>@x.Category.Name</td>
@@ -36,11 +36,9 @@
                 <td>
                     <a asp-action="Update" asp-route-id="@x.Id" class="btn btn-success">
 
-                        <i class="bi bi-pencil-square"></i> Edit
-                    </a>
+                        <i class="bi bi-pencil-square"></i> Edit </a>
                     <a asp-action="Delete" asp-route-id="@x.Id" class="btn btn-danger">
-                        <i class="bi bi-trash"></i> Delete
-                    </a>
+                        <i class="bi bi-trash"></i> Delete </a>
                 </td>
             </tr>
         }
