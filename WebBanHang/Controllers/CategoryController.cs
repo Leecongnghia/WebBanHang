@@ -62,7 +62,7 @@ namespace WebBanHang.Controllers
                 TempData["success"] = "Category updated success";
                 return RedirectToAction("Index");
             }
-            return View();
+            return View(category);
         }
         //Hiển thị form xác nhận xóa chủng loại
         public IActionResult Delete(int id)
