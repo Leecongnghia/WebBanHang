@@ -177,7 +177,7 @@ namespace WebBanHang.Controllers
 
                     }
                 }
-                // xoa san pham khoi CSDL
+                //Xóa sp khỏi CSDL
                 _db.Products.Remove(product);
                 _db.SaveChanges();
                 TempData["success"] = "Product deleted success";
