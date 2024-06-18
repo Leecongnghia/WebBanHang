@@ -71,6 +71,6 @@
     <!-- Core theme JS-->
     <script src="~/shop-template/js/scripts.js"></script>
     <script src="/js/site.js"></script>
-    
+    @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
