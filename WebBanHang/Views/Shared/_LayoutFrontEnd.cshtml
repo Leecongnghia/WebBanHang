@@ -38,6 +38,7 @@
                         <a class="nav-link text-dark" asp-area="Admin" asp-controller="Category" asp-action="Index">Management</a>
                     </li>
                 </ul>
+                <partial name="_LoginPartial" />
                 <form class="d-flex" asp-action="Index" asp-controller="Cart">
                     <button class="btn btn-outline-dark" type="submit">
                         <i class="bi-cart-fill me-1"></i>
@@ -48,17 +49,11 @@
             </div>
         </div>
     </nav>
-    <!-- Header-->
-    <header class="bg-dark py-5">
-        <div class="container px-4 px-lg-5 my-5">
-            <div class="text-center text-white">
-                <h1 class="display-4 fw-bolder">Shop in style</h1>
-                <p class="lead fw-normal text-white-50 mb-0">With this shop hompeage template</p>
-            </div>
-        </div>
-    </header>
+    
     <!-- Section-->
-    @RenderBody()
+    <div class="container">
+        @RenderBody()
+    </div>
     <!-- Footer-->
     <footer class="py-5 bg-dark">
         <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Lê Công Nghĩa-C22ATH1-2221160031</p></div>

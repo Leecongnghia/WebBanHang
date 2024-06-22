@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Hosting;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -12,6 +13,8 @@ using WebBanHang.Models;
 
 namespace WebBanHang.Controllers
 {
+    [Area("Admin")]
+    [Authorize(Roles = ShareData.Role_Admin)]
     public class ProductController : Controller
     {
         private readonly ApplicationDbContext _db;
